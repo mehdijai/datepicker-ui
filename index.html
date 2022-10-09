@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/date-handler.js"></script>
+    <script src="js/main.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        position: relative;
+      }
+      main {
+        padding: 20px;
+      }
+    </style>
+    <title>DatePickerUI</title>
+  </head>
+  <body>
+    <main>
+      <div id="mj-datepicker" class="mj-datepicker-calendar-wrapper dp-closed" data-min-date="10/09/2022" data-max-date="11/02/2022">
+        <span id="dp-close-wrapper" class="dp-close material-symbols-rounded"> close </span>
+        <div class="dp-calendar">
+          <div class="dp-header">
+            <button id="dp-previous-year" class="dp-controller">
+              <span class="material-symbols-rounded"> keyboard_double_arrow_left </span>
+            </button>
+            <button id="dp-previous-month" class="dp-controller">
+              <span class="material-symbols-rounded"> chevron_left </span>
+            </button>
+            <div class="dp-page">
+              <span id="dp-current-month" class="dp-month"></span>
+              <span id="dp-current-year" class="current-month"></span>
+            </div>
+            <button id="dp-next-month" class="dp-controller">
+              <span class="material-symbols-rounded"> chevron_right </span>
+            </button>
+            <button id="dp-next-year" class="dp-controller">
+              <span class="material-symbols-rounded"> keyboard_double_arrow_right </span>
+            </button>
+          </div>
+          <div class="dp-body">
+            <div class="dp-days">
+              <div class="dp-week-day">Lun</div>
+              <div class="dp-week-day">Mar</div>
+              <div class="dp-week-day">Mer</div>
+              <div class="dp-week-day">Jeu</div>
+              <div class="dp-week-day">Ven</div>
+              <div class="dp-week-day">Sam</div>
+              <div class="dp-week-day">Dim</div>
+            </div>
+            <div id="dp-dates" class="dp-dates">
+              <div class="dp-week">
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+              </div>
+              <div class="dp-week">
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+              </div>
+              <div class="dp-week">
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+              </div>
+              <div class="dp-week">
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+              </div>
+              <div class="dp-week">
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+              </div>
+              <div class="dp-week">
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+                <div class="dp-day"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dp-footer">
+            <button id="dp-cancel-date" class="dp-actions dp-secondary">Annuler</button>
+            <button id="dp-apply-date" class="dp-actions dp-primary">Appliquer</button>
+          </div>
+        </div>
+      </div>
+      <div class="mj-datepicker">
+        <div id="dp-trigger" class="dp-trigger">
+          <div class="dp-input">
+            <span id="dp-content" class="dp-content"> 09/10/2022 </span>
+            <span class="dp-icon material-symbols-rounded">calendar_month</span>
+          </div>
+          <input type="datetime" id="dp-datepicker-input" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

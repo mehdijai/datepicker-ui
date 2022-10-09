@@ -1,0 +1,239 @@
+.dp-secondary {
+  background-color: #ebebeb;
+  color: #171717;
+  transition: background 0.3s ease-in-out;
+}
+.dp-secondary:hover {
+  background-color: #dedede;
+}
+
+.dp-primary {
+  background-color: #245586;
+  color: #ffffff;
+  transition: background 0.3s ease-in-out;
+}
+.dp-primary:hover {
+  background-color: #29629a;
+}
+
+.material-symbols-rounded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+button {
+  border: none;
+  background-color: unset;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.mj-datepicker-calendar-wrapper {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  background-color: #efefef;
+  -webkit-animation: slideIn 0.3s ease-in-out;
+          animation: slideIn 0.3s ease-in-out;
+}
+.mj-datepicker-calendar-wrapper.dp-closed {
+  display: none;
+}
+.mj-datepicker-calendar-wrapper .dp-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #b94e4e;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.mj-datepicker-calendar-wrapper .dp-close:hover {
+  background-color: #fefefe;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter", sans-serif;
+  color: #171717;
+  width: 320px;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 10px 15px;
+  box-shadow: 0 20px 40px rgba(145, 145, 145, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 15px;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-header .dp-controller {
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  transition: background 0.3s ease-in-out;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-header .dp-controller:hover {
+  background-color: #efefef;
+  border-color: #ffffff;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-header .dp-page {
+  font-weight: 600;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-days {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-days .dp-week-day {
+  font-size: 14px;
+  font-weight: 600;
+  color: #919191;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-days .dp-week-day:hover {
+  background-color: #efefef;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-dates .dp-week {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-dates .dp-week.dp-hide {
+  display: none;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-dates .dp-week .dp-day {
+  font-size: 14px;
+  font-weight: 600;
+  color: #171717;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-dates .dp-week .dp-day:hover {
+  background-color: #efefef;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-dates .dp-week .dp-day.dp-out-of-month {
+  color: #cacaca;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-dates .dp-week .dp-day.dp-selected {
+  background-color: #e4eef8;
+  color: #245586;
+  font-weight: 700;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-body .dp-dates .dp-week .dp-day.dp-today {
+  background-color: #245586;
+  color: #ffffff;
+  letter-spacing: 2px !important;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.mj-datepicker-calendar-wrapper .dp-calendar .dp-footer .dp-actions {
+  width: 100%;
+  padding: 9px;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.mj-datepicker .dp-trigger .dp-input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 4px rgba(202, 202, 202, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+.mj-datepicker .dp-trigger .dp-input .dp-content {
+  font-size: 14px;
+  font-family: "inter", sans-serif;
+  color: #171717;
+}
+.mj-datepicker .dp-trigger .dp-input .dp-icon {
+  font-size: 16px;
+  color: #919191;
+}
+.mj-datepicker .dp-trigger input[type=datetime] {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=main.css.map */
