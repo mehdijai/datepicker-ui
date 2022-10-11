@@ -6,3 +6,7 @@ A Datepicker with modern UI. the project is created using HTML, SCSS (Compiled t
 
 You can select dates, which will be saved to the hidden input with `#dp-datepicker-input`.
 Currently, the datepicker does not support Max Min dates. They will be added later.
+
+# jQuery Datepicker
+
+Customizing the already-existing datepicker plugin.
