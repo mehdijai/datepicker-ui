@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/jquery-ui/style.css" />
+    <script defer>
+      $(function () {
+        $("#datepicker").datepicker({
+          prevText: "chevron_left",
+          nextText: "chevron_right",
+          showOtherMonths: true,
+          showButtonPanel: true,
+          showMonthAfterYear: true,
+          changeMonth: true,
+          changeYear: true,
+          closeText: "Apply",
+          currentText: "Now",
+          dateFormat: "yy/mm/dd",
+          hideIfNoPrevNext: true
+        });
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="dateBox">
+      <input
+        class="js--datePicker"
+        type="text"
+        id="datepicker"
+        value="Date To"
+        readonly="readonly"
+      />
+    </div>
+  </body>
+</html>
