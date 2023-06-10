@@ -149,8 +149,6 @@ const nextYear = document.getElementById("dp-next-year");
 
 previousYear.addEventListener("click", () => {
   date = getPreviousYear(date);
-  //   currentMonth.innerText = date.toLocaleString("fr", { month: "long" });
-  //   currentYear.innerText = date.getFullYear();
   daysProxy.date = date;
 });
 
